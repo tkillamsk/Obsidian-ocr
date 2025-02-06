@@ -1,10 +1,11 @@
+# Description
 Simple script to OCR text on pics and put it to .md file in Obsidian vault.
 Supports russian hand written text
 To split notes from each othe use "#" sign. This will create a Task from note and add /n.
 
 After script processed all files it will ask to delete these files.
 
-## Supported image formats:
+# Supported image formats:
 - png
 - jpg
 - jpeg
