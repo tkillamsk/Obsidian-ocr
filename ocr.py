@@ -4,11 +4,11 @@ from PIL import Image
 from datetime import datetime
 
 ############
-# Obsidian vault path where you will save images. 
-vault = ''
-# File for OCRed text
+# Путь до ваулта Obsidian
+vault = f''
+# Файл, куда кладется распознанный текст.
 file_name = 'unsorted.md'
-# Character to be changed to task sign markdown. Usefull to separate tasks
+# Какой символ выделяет задачу
 task_sign = '#'
 
 def read_tasks(pic):
@@ -19,12 +19,13 @@ def read_tasks(pic):
         result +=i
 
     final = result.replace(task_sign, '\n- [ ] ')
+    final = result.replace('!', '\n')
     return final
 
 
 def write_tasks_to_file(filename, tasks, file=f'{vault}/{file_name}'):
         with open(file, 'a') as the_file:
-            string = f'\n{filename} {datetime.now().strftime("%d/%m/%Y %H:%M")}\n {tasks}\n'
+            string = f'![[{filename}]]\n{datetime.now().strftime("%d/%m/%Y %H:%M")}\n {tasks}\n'
             the_file.write(string)
             print('Success!')
 
