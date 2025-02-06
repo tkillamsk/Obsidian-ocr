@@ -17,7 +17,7 @@ pip install -r requilements.txt
 # Setup
 Fill in "vault"(path to vault root) and "file_name"(ie "unsorted.md") vars.
 If You don't want to be asked on file deletion comment do_delete().
-To split notes from each othe use ```#``` sign. This will create a Task from note and add /n.
+To split notes from each othe use ```#``` sign. This will add ```/n``` and create a Task from note.
 
 # Run 
 
