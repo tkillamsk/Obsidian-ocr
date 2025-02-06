@@ -4,11 +4,11 @@ from PIL import Image
 from datetime import datetime
 
 ############
-# Путь до ваулта Obsidian
-vault = f'/Users/davoronchev/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault'
-# Файл, куда кладется распознанный текст.
+# Obsidian vault path where you will save images. 
+vault = ''
+# File for OCRed text
 file_name = 'unsorted.md'
-# Какой символ выделяет задачу
+# Character to be changed to task sign markdown. Usefull to separate tasks
 task_sign = '#'
 
 def read_tasks(pic):
