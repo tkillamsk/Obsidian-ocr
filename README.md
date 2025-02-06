@@ -12,4 +12,9 @@ pip install -r requilements.txt
 # Setup
 Fill in "vault"(path to vault root) and "file_name"(ie "unsorted.md") vars.
 If You don't want to be asked on file deletion comment do_delete().
-Run ocr.py and check unsorted.md.
+# Run 
+
+```
+python ocr.py
+```
+check unsorted.md.
