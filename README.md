@@ -1,5 +1,5 @@
 # Description
-Simple script to OCR text on pics and put it to .md file in Obsidian vault.
+Simple script to OCR(using [Apple OCR](https://github.com/louisbrulenaudet/apple-ocr)) text on pics and put it to .md file in Obsidian vault.
 Supports russian hand written text.
 
 After script processed all files it will ask to delete these files.
